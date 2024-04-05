@@ -438,7 +438,6 @@ p a:after,
 	border-left: 0.147058823529% solid #d9d9d9;
 	margin: 0 0 0 -0.147058823529%;
 	display: flex;
-	align-items: center;
 	justify-content: center;
 }
 
@@ -490,16 +489,16 @@ p a:after,
 	cursor: pointer;
 	width: 50px;
 	height: 50px;
-	color: #06283D;
-	background: #dff6ff;
+	color: #3a3d06;
+	background: #fdf6eb;
 	border-radius: 50%;
 	font-size: 22px;
 	transition: 0.4s ease;
 }
 
-.search-box button::hover {
-	color: #fff;
-	background: #06283D;
+.search-box button:hover {
+	color: #3a3d06;
+	background: #f5dfbc;
 }
 
 .search-box i {
