@@ -1,7 +1,7 @@
 const weather = document.querySelector('.weather');
 const search = document.querySelector('.search-box button');
 const weatherBox = document.querySelector('.weather-box');
-const weatherDetails = document.querySelector('weather-details');
+const weatherDetails = document.querySelector('.weather-details');
 const error404 = document.querySelector('.not-found');
 
 search.addEventListener('click', () => {
@@ -28,23 +28,24 @@ search.addEventListener('click', () => {
 		const wind = document.querySelector('.weather-details .wind span');
 		switch (json.weather[0].main) {
 		case 'Clear':
-			image.src = 'images/clear.img';
+			image.src = 'images/clear.png';
 			break;
 		case 'Rain':
-			image.src = 'images/rain.img';
+			image.src = 'images/rain.png';
 			break;
 		case 'Snow':
-			image.src = 'images/snow.img';
+			image.src = 'images/snow.png';
 			break;
 		case 'Clouds':
-			image.src = 'images/cloud.img';
+			image.src = 'images/cloud.png';
 			break;
 		case 'Haze':
-			image.src = 'images/mist.img';
+			image.src = 'images/mist.png';
 			break;
 		default:
 			image.src = '';
 		}
+
 		temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
 		description.innerHTML = `${json.weather[0].description}`;
 		humidity.innerHTML = `${json.main.humidity}%`;
