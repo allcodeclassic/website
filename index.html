@@ -3,20 +3,22 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="author" content="classic">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Website</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="styles.css">
+	<title>Website</title>
 </head>
 <body class="home" style>
 	<header class>
 		<div id="header_container">
 			<div class="left" id="icon">
-				<a href="#header_container">
+				<a href="#home">
 					<img src="images/icon.png" alt="name" height=120>
 				</a>
 			</div>
 			<div id="logo" class style>
-				<a href="#header_container">
+				<a href="#home">
 					<img src="images/logo.png" alt="name" height=120>
 				</a>
 			</div>
@@ -30,7 +32,7 @@
 					<div id="donation">
 						<div class="loving">
 							<a>
-								<img src="images/loving.png" alt="name" width="360" height="220">
+								<img src="images/loving.png" alt="name" width="130" height="130">
 							</a>
 						</div>
 						<div class="options">
@@ -92,22 +94,53 @@
 			</div>
 			<!-- Main -->
 			<div id="main_body" class="right">
-				<h1>Hong biet lam gi het</h1>
+				<div class="weather">
+					<div class="search-box">
+						<i class="fa-solid fa-location-dot"></i>
+						<input type="text" placeholder="Enter your location">
+						<button class="fa-solid fa-magnifying-glass"></button>
+					</div>
+					<div class="not-found">
+						<img src="images/404.png">
+						<p>Oops! Invalid location :/</p>
+					</div>
+					<div class="weather-box">
+						<img src="">
+						<p class="temperature"></p>
+						<p class="description"></p>
+					</div>
+					<div class="weather-details">
+						<div class="humidity">
+							<i class="fa-solid fa-water"></i>
+							<div class="text">
+								<span></span>
+								<p>Humidity</p>
+							</div>
+						</div>
+						<div class="wind">
+							<i class="fa-solid fa-wind"></i>
+							<div class="text">
+								<span></span>
+								<p>Wind Speed</p>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="clear"></div>
 		</div>
 		<div id="amazon-notice">
 			<p>
-				<em>Trang web số 1</em>
-				. 
-				<a href="https://www.facebook.com/hmtrung0203/" target="_blank">Thông tin về tôi</a>
-				. Xin cam on vi da den.
+				<em>Trang web số 1</em>. 
+				<a href="https://www.facebook.com/hmtrung0203/" target="_blank">Thông tin về tôi</a>. Xin cam on vi da den.
 			</p>
 			<p>
 				Email: hmtrung2305@gmail.com
 			</p>
 		</div>
 	</div>
+	<script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+	<script src="js/weather.js"></script>
 	<script src="js/button.js"></script>
 	<script>
 		window.onscroll = function(){scrollFunction()};
