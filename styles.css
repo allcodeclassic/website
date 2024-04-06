@@ -475,6 +475,7 @@ p a:after,
 	text-transform: uppercase;
 	padding-left: 32px;
 	letter-spacing: 0;
+	outline: none;
 }
 
 .search-box input::placeholder {
