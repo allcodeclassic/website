@@ -18,13 +18,13 @@
 					<img src="images/icon.png" alt="name" height=120>
 				</a>
 			</div>
-			<div id="logo" class style>
-				<a>
-					<img src="images/logo.png" alt="name" height=120>
-				</a>
+	<!-- 		<div class="space-left" id="search-bar">
+				
+			</div> -->
+			<div class="float-right" id="control">
+				<img src="images/setting.png" alt="setting_icon" width="30" height="30">
 			</div>
 		</div>
-		<div id="header_print"></div>
 	</header>
 	<div id="container">
 		<div id="content">
@@ -72,7 +72,7 @@
 						<h3 class="underline space-above">SUBCRIBE</h3>
 						<div class="break"></div>
 						<p class="inline-block no-border">
-							<a href="/newsletter/">
+							<a href="/newsletter/newsletter.html">
 								<img src="images/newsletter.png" alt="newsletter_icon" width="15px" height="15px" align="left">
 								Newsletter
 							</a>
@@ -86,9 +86,23 @@
 						</p>
 						<div class="break"></div>
 						<p class="inline-block no-border">
+							<a href="disease/disease.html">
+								<img src="images/disease.png" alt="disease_icon" width="15px" height="15px" align="left">
+								Disease and Protection
+							</a>
+						</p>
+						<div class="break"></div>
+						<p class="inline-block no-border">
 							<a href="sudoku/sudoku.html">
 								<img src="images/sudoku.png" alt="sudoku_icon" width="15px" height="15px" align="left">
 								Sudoku Solver
+							</a>
+						</p>
+						<h3 class="underline space-above">GAMES</h3>
+						<p class="inline-block no-border">
+							<a href="2048/2048.html">
+								<img src="images/2048.png" alt="2048_icon" width="15px" height="15px" align="left">
+								2048
 							</a>
 						</p>
 						<h3 class="underline space-above">CONNECT</h3>
@@ -104,11 +118,24 @@
 								Instagram
 							</a>
 						</p>
+						<div class="break"></div>
+						<h3 class="underline space-above">SETTINGS</h3>
+						<p class="inline-block">
+							<a href="setting/setting.html">
+								<img src="images/setting.png" alt="setting_icon" width="15px" height="15px" align="left">
+								Setting
+							</a>
+						</p>
 					</div>
 				</div>
 			</div>
 			<!-- Main -->
 			<div id="main_body" class="right">
+				<div class="ill display-none">
+					<p>
+						Hi
+					</p>
+				</div>
 				<div class="weather">
 					<div class="search-box">
 						<i class="fa-solid fa-location-dot"></i>
@@ -149,23 +176,12 @@
 				<em>Trang web số 1</em>. 
 				<a href="https://www.facebook.com/hmtrung0203/" target="_blank">Thông tin về tôi</a>. Xin cam on vi da den.
 			</p>
-			<p>Email: hmtrung2305@gmail.com</p>
+			<p>Email: hmtrung2005@gmail.com</p>
 		</div>
 	</div>
 
 	<script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
 	<script src="js/weather.js"></script>
 	<script src="js/button.js"></script>
-	<script>
-		window.onscroll = function(){scrollFunction()};
-		function scrollFunction() {
-			const headerElement = document.querySelector("header");
-			if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-				headerElement.classList.add("smaller");
-			} else {
-				headerElement.classList.remove("smaller");
-			}
-		}
-	</script>
 </body>
 </html>
