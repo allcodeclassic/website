@@ -102,7 +102,7 @@ a {
 }
 
 .coin.falling {
-	background: linear-gradient(90deg, #202022, #14ff0010);
+	background: linear-gradient(90deg, #202022, #ff000010);
 }
 
 .coin.falling .coin-price .price {
